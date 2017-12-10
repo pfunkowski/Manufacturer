@@ -1,9 +1,9 @@
-<? /* @var $this Divante_Manufacturer_Block_List */ ?>
-<?
+<?php /* @var $this Divante_Manufacturer_Block_List */ ?>
+<?php
 $manufacturers = $this->getManufacturers();
 ?>
 <ul>
-<? foreach($manufacturers as $manufacturer): ?>
-    <li><a href="<?= $this->getManufacturerUrl($manufacturer); ?> "><?= $manufacturer->getLabel(); ?></a></li>
-<? endforeach ?>
+<?php foreach($manufacturers as $manufacturer): ?>
+    <li><a href="<?php echo $this->getManufacturerUrl($manufacturer); ?> "><?php echo $manufacturer->getLabel(); ?></a></li>
+<?php endforeach ?>
 </ul>
